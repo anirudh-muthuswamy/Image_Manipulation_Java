@@ -1,0 +1,57 @@
+Instructions to run JAR File:
+
+1. Open terminal in the res folder. 
+2. for GUI interactions : run the jar file using the command  : "java -jar assignment5.jar"
+3. For text based interactions : run the jar file using the commands : "java -jar assignment5.jar -text"
+4. For running scripts present in text file : run the jar file using the command: "java -jar assignment5.jar -file <filename>.txt" 
+
+** Interacting with the Graphical User Interface ** 
+
+The Graphical User Interface has been designed for the average joe. Hence performing operations on an image should be rather intuitive to the User. 
+
+The Menu Bar on the top of the Application has 4 Options to choose form ie.(File, Filter,Transform,Modify).
+1.The File Menu Item has 2 further submenu options : Load and Save. 
+Both of these operations prompt another dialog box which opens the working directory of the user. The user can then choose which image to Load or Save. 
+
+
+	 
+
+2. The Filter Menu Item has SubMenu items to Blur, Sharpen and Dither the image present on the screen. 
+
+3. The Transform Menu Item has a SubMenu Item to Grayscale, Brighten and Sepia an image. The Greyscale submenu also has options to choose the type of grayscale operatin to be performed.
+
+4. The Modify Menu Item has Submenu Options to Flip an image, Horizontally and Vertically, as well as Split and Combine the image. 
+
+			
+** TEXT based support ** 
+
+According to the assignment prompt, we support the following commands: 
+1. load image-path image-name: Load an image from the specified path and refer it by image-name henceforth.
+
+2. save image-path image-name: Save the image with the given name to the specified path.
+
+3. greyscale <red,green,blue,luma,intensity,value>-component image-name dest-image-name: Create a greyscale image with the requested component of the image with the given name and refer to it henceforth by dest-immage-name. 
+
+4. horizontal-flip image-name dest-image-name: Flip an image horizontally to create a new image, refer to it as dest-image-name.
+
+5. vertical-flip image-name dest-image-name: Flip an image vertically to create a new image, refer to it as dest-image-name.
+
+6. brighten increment image-name dest-image-name: brighten the image by the given increment to create a new image, referred to henceforth by dest-image-name.
+
+7. rgb-split image-name dest-image-name-red dest-image-name-green dest-image-name-blue: split the given image into three greyscale images containing its red, green and blue components respectively.
+
+8. rgb-combine image-name red-image green-image blue-image: Combine the three greyscale images into a single image that gets its red, green and blue components from the three images respectively.
+
+9. run script-file: Load and run the script commands in the specified file.
+
+10. sepia image-name dest-image-name : Apply the Sepia Image transform on the image-name to create a new image and refer to it as dest-image-name.
+
+11. sharpen image-name dest-image-name : Apply the Sharpen Filter on the image-name to create a new image and refer to it as dest-image-name.
+
+12. blur image-name dest-image-name : Apply the Blur Filter on the image-name to create a new image and refer to it as dest-image-name.
+
+13. dither image-name dest-image-name : Apply the Dither Operation on the image-name to create a new image and refer to it as dest-image-name.
+
+14.  greyscale image-name dest-image-name :Along with the prior greyscale command, we also support this command which defaults the component argument to luma which uses the greyscale transform operation as provided in this assignment.
+
+

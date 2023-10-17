@@ -1,0 +1,76 @@
+load ./sample-burger.ppm b-ppm 
+
+load ./sample-burger.png b-png 
+
+load ./sample-burger.jpg b-jpg
+
+load ./sample-burger.bmp b-bmp
+
+brighten 50 b-png b-brighter
+
+greyscale b-png b-png-grey-transform
+
+greyscale value-component b-png b-png-greyv
+
+greyscale intensity-component b-png b-png-greyi
+
+greyscale luma-component b-png b-png-greyl
+
+greyscale red-component b-png b-png-greyred
+
+greyscale green-component b-png b-png-greygreen
+
+greyscale blue-component b-png b-png-greyblue
+
+horizontal-flip b-jpg b-jpg-hflip
+
+vertical-flip b-jpg b-jpg-vflip
+
+rgb-split b-bmp b-bmp-red b-bmp-green b-bmp-blue
+
+brighten 50 b-bmp-blue b-bmp-brighten-blue
+
+rgb-combine b-bmp-blue-tint b-bmp-red b-bmp-green b-bmp-brighten-blue
+
+blur b-ppm b-ppm-blur
+
+sharpen b-png b-png-sharpen
+
+dither b-bmp b-bmp-dither
+
+sepia b-jpg b-jpg-sepia
+
+brighten -50 b-ppm b-ppm-darker
+
+save ./b-brighter.ppm b-brighter
+
+save ./b-png-greyv.jpg b-png-greyv
+
+save ./b-png-greyi.jpg b-png-greyi
+
+save ./b-png-greyl.ppm b-png-greyl
+
+save ./b-png-greyred.ppm b-png-greyred
+
+save ./b-png-greygreen.bmp b-png-greygreen
+
+save ./b-png-greyblue.bmp b-png-greyblue
+
+save ./b-jpg-hflip.ppm b-jpg-hflip
+
+save ./b-jpg-vflip.png b-jpg-vflip
+
+save ./b-bmp-blue-tint.png b-bmp-blue-tint
+
+save ./b-ppm-blur.png b-ppm-blur
+
+save ./b-png-sharpen.jpg b-png-sharpen
+
+save ./b-bmp-dither.ppm b-bmp-dither
+
+save ./b-jpg-sepia.jpg b-jpg-sepia
+
+save ./b-ppm-darker.bmp b-ppm-darker
+
+quit
+
