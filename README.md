@@ -1,4 +1,9 @@
-**Code Overview:**
+![view drawio](https://github.com/anirudh-muthuswamy/Image_Enhancement_and_Manipulation_Java/assets/126427302/3b9f15c2-42da-4773-97e6-a4cc09a00c55)
+
+
+
+***Code Overview:***
+
 This document gives a high level overview of the current design choices and implementation for our 
 project. We adopt the model view controller Architecture to give a basic structure to the project.
 Furthermore, in order to make the GUI based view, we evolve our design choice by incorporating a Model View View Model approach. 
@@ -10,14 +15,14 @@ This is useful as the view needs to have the data that it needs to display.
 The View class is where the Actual user interacts with the program. 
 The program supports 2 types of interactions. Text based and GUI based. 
 
-1.The text based interaction can be called by passing the -text flag while running the JAR file.
+1. The text based interaction can be called by passing the -text flag while running the JAR file.
 	It supports all the commands as mentioned later in this document.
 
 2. The GUI based interaction is the default interaction medium. ie it requires no flag to be to loaded while running the jar file. 
 	We use the JAVA SWING framework package to create our GUI.
-	The design of the GUI View is as follows : 
-	a.Main Frame : this is the main parent frame that contains all other components of the GUI. (Component Type : JFrame)
-	b.Menu Items : On the top of our program window, we create a Menu Bar which provides the user all the functionalites supported in the program.
+	The design of the GUI View is as follows :
+	a. Main Frame : this is the main parent frame that contains all other components of the GUI. (Component Type : JFrame)
+	b. Menu Items : On the top of our program window, we create a Menu Bar which provides the user all the functionalites supported in the program.
 		The remainder of the Main Frame is divided into 2 parts(leftPanel and imagePanel) in a columnwise fashion, creating demarkation between the 			
 		image canvas and the left panel hich has to more panels aligned row wise(imageListPanel and HistogramPanel).(Component Type : JMenuBar)
 		The Menu Items have Menu Options such as FILE ,FILTER ,TRANSFORM ,MODIFY. Each of these sub menu's have clickable menu options which are 				
