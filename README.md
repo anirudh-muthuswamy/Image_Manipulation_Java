@@ -20,8 +20,7 @@ The program supports 2 types of interactions. Text based and GUI based.
 	b.Menu Items : On the top of our program window, we create a Menu Bar which provides the user all the functionalites supported in the program.
 		The remainder of the Main Frame is divided into 2 parts(leftPanel and imagePanel) in a columnwise fashion, creating demarkation between the 			
 		image canvas and the left panel hich has to more panels aligned row wise(imageListPanel and HistogramPanel).(Component Type : JMenuBar)
-
-		b.i. The Menu Items have Menu Options such as FILE ,FILTER ,TRANSFORM ,MODIFY. Each of these sub menu's have clickable menu options which are 				
+		The Menu Items have Menu Options such as FILE ,FILTER ,TRANSFORM ,MODIFY. Each of these sub menu's have clickable menu options which are 				
 		used to execute the command.
 
 	c. ImagePanel : This is the panel which houses the current image loaded in the program. Whenever an image is chosen from the imageList Panel,
