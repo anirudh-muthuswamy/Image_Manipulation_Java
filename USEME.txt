@@ -1,9 +1,9 @@
 Instructions to run JAR File:
 
 1. Open terminal in the res folder. 
-2. for GUI interactions : run the jar file using the command  : "java -jar assignment5.jar"
-3. For text based interactions : run the jar file using the commands : "java -jar assignment5.jar -text"
-4. For running scripts present in text file : run the jar file using the command: "java -jar assignment5.jar -file <filename>.txt" 
+2. for GUI interactions : run the jar file using the command  : "java -jar Image_Enhancement.jar"
+3. For text based interactions : run the jar file using the commands : "java -jar Image_Enhancement.jar -text"
+4. For running scripts present in text file : run the jar file using the command: "java -jar Image_Enhancement.jar -file <filename>.txt" 
 
 ** Interacting with the Graphical User Interface ** 
 
@@ -25,7 +25,7 @@ Both of these operations prompt another dialog box which opens the working direc
 			
 ** TEXT based support ** 
 
-According to the assignment prompt, we support the following commands: 
+we support the following commands: 
 1. load image-path image-name: Load an image from the specified path and refer it by image-name henceforth.
 
 2. save image-path image-name: Save the image with the given name to the specified path.
@@ -52,6 +52,6 @@ According to the assignment prompt, we support the following commands:
 
 13. dither image-name dest-image-name : Apply the Dither Operation on the image-name to create a new image and refer to it as dest-image-name.
 
-14.  greyscale image-name dest-image-name :Along with the prior greyscale command, we also support this command which defaults the component argument to luma which uses the greyscale transform operation as provided in this assignment.
+14.  greyscale image-name dest-image-name :Along with the prior greyscale command, we also support this command which defaults the component argument to luma which uses the greyscale transform operation.
 
 
